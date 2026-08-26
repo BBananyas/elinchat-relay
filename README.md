@@ -47,10 +47,6 @@ curl -X POST https://your-worker-url.workers.dev/send \
   -d '{"name":"Test","text":"hello"}'
 ```
 
-## A note on the bot showing offline
-
-The bot will always show as offline in your Discord server's member list, and that is expected. This design never opens a live connection to Discord, it only makes one off request at a time when a player's game asks the Worker to. Presence status and the ability to read or send messages through the REST API are unrelated to each other.
-
 ## Cost
 
 Cloudflare's free tier covers this comfortably for a small group. As of writing it allows 100,000 requests a day, and the mod polls for new messages every few seconds per player while the chat window's relay tab is set up, which is well under that for a handful of people.
