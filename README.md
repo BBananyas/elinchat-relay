@@ -12,7 +12,7 @@ It holds the Discord bot token as a Worker secret, so the token never reaches an
 ## Setting up your own Discord bot
 
 1. Go to the [Discord Developer Portal](https://discord.com/developers/applications) and click **New Application**. Name it whatever you like.
-2. In the sidebar, go to **Bot**, then click **Reset Token** and copy it somewhere safe. Treat this like a password, it never goes in this repo, in the mod, or anywhere public.
+2. In the sidebar, go to **Bot**, then click **Reset Token** and copy it somewhere safe. Treat this like a password, anywhere public.
 3. On the same Bot page, turn on **Message Content Intent** under Privileged Gateway Intents.
 4. Go to **OAuth2 > URL Generator**. Under Scopes, check `bot`. Under Bot Permissions, check **View Channel**, **Send Messages**, and **Read Message History**. Copy the generated URL.
 5. Open that URL, pick your Discord server, and authorize it. This invites the bot into your server.
